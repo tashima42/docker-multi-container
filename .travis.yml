@@ -8,3 +8,10 @@ before_install:
 
 script:
   - docker run -e CI=true tashima42/docker-react npm run test
+
+deploy:
+  provider: heroku
+  api_key: 
+    secure: $HEROKU_API_KEY
+  on:
+    branch: main
