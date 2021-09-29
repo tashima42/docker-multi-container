@@ -29,10 +29,3 @@ services:
     hostname: nginx
     ports:
       - "80:80"
-
-region: sa-east-1
-app: multi-docker
-bucket_name: elasticbeanstalk-sa-east-1-733095515052
-bucket_path: docker-multi
-access_key_id: $AWS_ACCESS_KEY
-secret_access_key: $AWS_SECRET_KEY
